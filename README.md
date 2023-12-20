@@ -1,2 +1,2 @@
-## This is my ned to end project
-# House price prediction
+## This is my end to end project
+#House price prediction
