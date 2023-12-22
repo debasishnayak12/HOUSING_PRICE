@@ -1,0 +1,3 @@
+[2023-12-22 19:51:45,961]) 96 werkzeug - WARNING -  * Debugger is active!
+[2023-12-22 19:51:45,964]) 96 werkzeug - INFO -  * Debugger PIN: 659-289-807
+[2023-12-22 19:59:20,374]) 96 werkzeug - INFO -  * Detected change in 'd:\\housing_price\\app.py', reloading

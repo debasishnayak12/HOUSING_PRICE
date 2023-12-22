@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: HOUSEPRICEPRED
+Version: 0.0.1
+Author: debasish12
+Author-email: nayakdebasish7205@gmail.com
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House price prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .text-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('https://imageurl.com/arrow-down.png') no-repeat;
+            background-position: right 10px center;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="text-container">
+            <h>HOUSE PRICE PREDICTION</h>
+        </div>
+    </header>
+    <form action="{{url_for('get_predict') }}" method="POST">
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" placeholder="Enter area(Flaot)"/>
+        </div>
+
+        <div class="form-group">
+            <label for="bedrooms">Beedroom:</label>
+            <input type="text" id="bedrooms" name="bedrooms" placeholder="Enter bedrooms(1-20)"/>
+        </div>
+
+        <div class="form-group">
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="text" id="bathrooms" name="bathrooms" placeholder="Enter bathrooms(1-20)"/>
+        </div>
+        <div class="form-group">
+            <label for="stories">Stories:</label>
+            <input type="text" id="stories" name="stories" placeholder="Enter Stories(1-20)"/>
+        </div>
+
+        <div class="form-group">
+            <label for="mainroad">Mainroad:</label>
+            <select id="mainroad" name="mainroad" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="guestroom">GuestRoom:</label>
+            <select id="guestroom" name="guestroom" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="basement">Basement:</label>
+            <select id="basement" name="basement" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="hotwaterheating">Hotwaterheating:</label>
+            <select id="hotwaterheating" name="hotwaterheating" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="airconditioning">Airconditioning:</label>
+            <select id="airconditioning" name="airconditioning" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="parking">Parking:</label>
+            <input type="text" id="parking" name="parking" placeholder="Enter parking(1-10)"/>
+        </div>
+
+        <div class="form-group">
+            <label for="prefarea">Prefarea:</label>
+            <select id="prefarea" name="prefarea" required="required">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="furnishingstatus">Furnishingstatus:</label>
+            <select id="furnishingstatus" name="furnishingstatus" required="required">
+                <option value="furnished">Furnished</option>
+                <option value="semi-furnished">Semi_furnished</option>
+                <option value="unfurnished">Unfurnished</option>
+            </select>
+        </div>
+
+        <div class="clearfix"></div>
+        <input type="submit" value="Predict">
+
+    </form>
+</body>
+</html>
+
+
+
+

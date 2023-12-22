@@ -1,0 +1,26 @@
+[2023-12-21 12:55:10,839]) 21 root - INFO - Dataingestion started
+[2023-12-21 12:55:10,848]) 25 root - INFO - i have read dataset as data
+[2023-12-21 12:55:10,854]) 29 root - INFO - i have saved the data as raw_data.csv in artifacts folder
+[2023-12-21 12:55:10,858]) 32 root - INFO - i have performed train_test_split
+[2023-12-21 12:55:10,862]) 37 root - INFO - i have saved trainand test data in artifact as train_data and test_data
+[2023-12-21 12:55:10,862]) 38 root - INFO - Dataingestion part completed
+[2023-12-21 12:55:10,890]) 74 root - INFO - read tran and test data completed 
+[2023-12-21 12:55:10,895]) 75 root - INFO - Train Dataframe Head : 
+     price   area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus
+0  3675000   3600         2          1        1      yes        no       no              no              no        0       no        furnished
+1  6930000  13200         2          1        1      yes        no      yes             yes              no        1       no        furnished
+2  4473000   3162         3          1        2      yes        no       no              no             yes        1       no        furnished
+3  4543000   4990         4          2        2      yes       yes      yes              no              no        0      yes        furnished
+4  4970000   7686         3          1        1      yes       yes      yes             yes              no        0       no   semi-furnished
+[2023-12-21 12:55:10,897]) 76 root - INFO - Test Dataframe Head : 
+     price  area  bedrooms  bathrooms  stories mainroad guestroom basement hotwaterheating airconditioning  parking prefarea furnishingstatus
+0  7490000  6600         3          1        4      yes        no       no              no             yes        3      yes        furnished
+1  8575000  8800         3          2        2      yes        no       no              no             yes        2       no        furnished
+2  3745000  3480         2          1        1      yes        no       no              no              no        0      yes   semi-furnished
+3  3150000  9000         3          1        2      yes        no       no              no              no        2       no   semi-furnished
+4  5530000  6100         3          2        1      yes        no      yes              no              no        2      yes        furnished
+[2023-12-21 12:55:10,897]) 28 root - INFO - data transformation started
+[2023-12-21 12:55:10,897]) 41 root - INFO - Pipeline initiated
+[2023-12-21 12:55:10,899]) 87 root - INFO - shape of input_feature_train_df :(381, 12)
+[2023-12-21 12:55:10,899]) 88 root - INFO - shape of input_feature_test_df :(164, 12)
+[2023-12-21 12:55:10,906]) 112 root - INFO - Error occured in initialize dta transformation
