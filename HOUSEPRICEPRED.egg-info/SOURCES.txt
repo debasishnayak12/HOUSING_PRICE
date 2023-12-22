@@ -1,7 +1,0 @@
-README.md
-setup.py
-HOUSEPRICEPRED.egg-info/PKG-INFO
-HOUSEPRICEPRED.egg-info/SOURCES.txt
-HOUSEPRICEPRED.egg-info/dependency_links.txt
-HOUSEPRICEPRED.egg-info/requires.txt
-HOUSEPRICEPRED.egg-info/top_level.txt
