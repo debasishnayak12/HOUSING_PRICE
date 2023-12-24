@@ -8,7 +8,7 @@
     <title>House price prediction</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
         }
@@ -23,6 +23,14 @@
         .text-container {
             max-width: 800px;
             margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        
+
+        h1 {
+            margin: 0;
         }
 
         form {
@@ -86,7 +94,7 @@
     
     <header>
         <div class="text-container">
-            <h>HOUSE PRICE PREDICTION</h>
+            <h1>HOUSE PRICE PREDICTION</h1>
         </div>
     </header>
     <form action="{{url_for('get_predict') }}" method="POST">

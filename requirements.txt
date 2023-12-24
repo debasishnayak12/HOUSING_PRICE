@@ -11,7 +11,7 @@ decorator==5.1.1
 executing==2.0.1
 Flask==3.0.0
 fonttools==4.47.0
--e git+https://github.com/debasishnayak12/HOUSING_PRICE.git@3e65eeb78693d32c4f07c7ac501a45fc410d4d10#egg=HOUSEPRICEPRED
+#-e git+https://github.com/debasishnayak12/HOUSING_PRICE.git@3e65eeb78693d32c4f07c7ac501a45fc410d4d10#egg=HOUSEPRICEPRED
 importlib-metadata==7.0.0
 importlib-resources==6.1.1
 ipykernel==6.27.1
